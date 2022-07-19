@@ -45,6 +45,6 @@ None
  - Starter Code Repo : https://github.com/arjunsharman06/notetaker
 
 ## Questions
-For any queestion you can reach out to me through :
+For any question you can reach out to me through :
  * Email : arjunsharman06@gmail.com
  * Github : https://github.com/arjunsharman06
