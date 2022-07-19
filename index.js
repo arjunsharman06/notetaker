@@ -1,6 +1,6 @@
 const express = require('express');
 const apiRoutes = require('./routes/apiRoutes/notes');
-
+const htmlRoutes = require('./routes/htmlRoutes/notes');
 // Creating an instance of express
 const app = express();
 
@@ -20,6 +20,9 @@ app.use(express.static(`public`));
 
 // Use Api Routes
 app.use('/api',apiRoutes);
+
+// Middleware for HTML Route
+app.use('/',htmlRoutes);
 
 // Listening 
 app.listen(PORT, (req, res) => console.log(`Listening on the Port ${PORT}`));

@@ -10,12 +10,7 @@ const {
 
 // Get Request : All
 router.get('/notes', (req, res) => {
-
-	let allNotes  = getAll("",notes);
-    
-    if(Object.keys(allNotes).length <= 0){
-        return res.status(400).send([`No Data found!!`]);
-    }
+	let allNotes  = getAll("",notes);    
     res.send(allNotes);
 });
 
@@ -45,7 +40,6 @@ router.post('/notes', (req, res) => {
 // Delete Request
 router.delete('/notes/:id', (req, res) => {
 
-    console.log("hello")
 	const note = getAll(req.params.id, notes);
    
 	if (Object.keys(note).length <= 0) {
